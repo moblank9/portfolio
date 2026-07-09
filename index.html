@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberForge — Security Research Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <div id="particles-canvas"></div>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">&lt;CyberForge /&gt;</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> <span class="cmd">whoami</span></p>
+          <p class="output"><span class="highlight">Cyber Security Researcher &amp; Developer</span></p>
+          <p><span class="prompt">$</span> <span class="cmd">cat /etc/purpose</span></p>
+          <p class="output">Building resilient systems through offensive &amp; defensive security research</p>
+          <p><span class="prompt">$</span> <span class="blink">_</span></p>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn primary-btn">View Projects</a>
+        <a href="#contact" class="btn outline-btn">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title"><span class="hash">#</span> About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a cybersecurity researcher passionate about uncovering vulnerabilities,
+            building defensive tooling, and contributing to open-source security projects.
+            My work spans penetration testing, malware analysis, reverse engineering,
+            and security automation.
+          </p>
+          <p>
+            Every project here is battle-tested in real environments — from CTF challenges
+            to production-grade security tools. I believe in transparent, community-driven
+            security research that makes the digital world safer for everyone.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="8">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">CVEs</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="3">0</span><span class="stat-suffix">k+</span>
+              <span class="stat-label">GitHub Stars</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-terminal">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="term-title">~ — bash — 80×24</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> <span class="cmd">nmap -sV -sC target.local</span></p>
+              <p class="output">PORT     STATE  SERVICE    VERSION</p>
+              <p class="output">22/tcp   open   ssh        OpenSSH 9.0</p>
+              <p class="output">80/tcp   open   http       nginx 1.24</p>
+              <p class="output">443/tcp  open   https      nginx 1.24</p>
+              <p class="output">3306/tcp closed mysql</p>
+              <p class="output"><span class="highlight">2 ports open, 1 vulnerability identified</span></p>
+              <p><span class="prompt">$</span> <span class="blink">_</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title"><span class="hash">#</span> Skills &amp; Tools</h2>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title"><span class="hash">#</span> Projects</h2>
+      <div class="projects-header">
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="recon">Recon</button>
+          <button class="filter-btn" data-filter="exploit">Exploit</button>
+          <button class="filter-btn" data-filter="defense">Defense</button>
+          <button class="filter-btn" data-filter="tooling">Tooling</button>
+        </div>
+        <div class="github-link-top">
+          <a href="https://github.com" target="_blank" class="btn small-btn">
+            <i class="fab fa-github"></i> View All on GitHub
+          </a>
+        </div>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="container">
+      <h2 class="section-title"><span class="hash">#</span> Research &amp; Blog</h2>
+      <div class="research-grid" id="researchGrid"></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title"><span class="hash">#</span> Contact</h2>
+      <div class="contact-content">
+        <p>Interested in collaborating, hiring, or just want to talk security?</p>
+        <div class="contact-links">
+          <a href="mailto:research@cyberforge.dev" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <span>research@cyberforge.dev</span>
+          </a>
+          <a href="https://github.com" target="_blank" class="contact-card">
+            <i class="fab fa-github"></i>
+            <span>github.com/cyberforge</span>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="contact-card">
+            <i class="fab fa-twitter"></i>
+            <span>@cyberforge</span>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <span>linkedin.com/in/cyberforge</span>
+          </a>
+        </div>
+        <div class="pgp-key">
+          <span class="pgp-label">PGP Public Key</span>
+          <code class="pgp-fingerprint">0xDEAD 0xBEEF 0xCAFE 0xF00D 0xABCD 0x1234 0x5678 0x9ABC</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 CyberForge — Built with <span class="heart">&hearts;</span> and lots of <span class="highlight">#include &lt;stddisclaimer.h&gt;</span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
